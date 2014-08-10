@@ -1,0 +1,18 @@
+# /etc/postfix/mysql-aliases.cf
+
+# your mysqluser
+user = vmailuser
+
+# password for the mysqluser
+password = password123
+
+# databasename
+dbname = mail
+
+# query
+query = SELECT destination FROM postfix_alias WHERE alias = '%s' and active=1
+# query = SELECT destination FROM postfix_alias WHERE alias = '%s'
+
+# mysql-host
+hosts = 127.0.0.1
+
