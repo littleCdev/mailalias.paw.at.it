@@ -1,6 +1,8 @@
 mailalias.paw.at.it
 ===================
 
+http://paw.at.it/mail/
+
 a small webinterface for postfix aliases with mysql
 
 copy src/mysql-aliases.cf to /etc/postfix/

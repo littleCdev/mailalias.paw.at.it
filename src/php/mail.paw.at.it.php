@@ -151,7 +151,7 @@ class mailAliasPawAtIt{
             return false;
         }
 
-        if( $oDb->iRows > mailPawAtItConfig::InsertsPerDay ){
+        if( $oDb->iRows > mailAliasPawAtIt::InsertsPerDay ){
             $this->setUserMsg( "you made too many requests, i said one per user" );
 
             return false;
